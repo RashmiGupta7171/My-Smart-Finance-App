@@ -7,12 +7,17 @@
   </head>
   <body>
     <h1>Discount Amount</h1>
-    <div class="container" id="conatiner"></div>
-    <label for="amount">Discount Amount</label>
-    <input type="text" id="discountAmount" name="discountAmount" />
-    <button type="submit" id="calculateDiscount" onclick="calculateDiscount()">
+    <a href="home.html">Home</a>
+    <div class="inputField">
+    <label for="amount">Enter Your Marked Price</label>
+    <input type="text" id="marketPrice">
+    <label for="rate">Enter your Discount Rate %</label>
+    <input type="text" id="discountRate">
+    <button type="button" class="calculatorButton" onclick="calculateDiscount()">
       Calculate Discount
     </button>
-    <div id="result"></div>
+    </div>
+    <div id="discountOutput"></div>
+    <script src="calculator.js"></script>
   </body>
 </html>

@@ -3,16 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profit Calculator</title>
+    <title>Profit  and Loss Calculator</title>
   </head>
   <body>
-    <h1>Profit Amount</h1>
-    <div class="container" id="conatiner"></div>
-    <label for="amount">Profit Amount</label>
-    <input type="text" id="profitAmount" name="ProfitAmount" />
-    <button type="submit" id="calculateProfit" onclick="calculateProfit()">
+    <h1>Profit  or Loss Amount</h1>
+    <a href="home.html">Home</a>    
+
+    <div class="inputField">
+    <label for="amount">Enter your Selling Amount</label>
+    <input type="text" id="sellingAmount">
+    <label for="amount" >Enter your Cost Amount</label>
+    <input type="text" id="costAmount">
+    
+    <button type="button" class="calculatorButton" onclick="calculateProfitLoss()">
       Calculate Profit
     </button>
-    <div id="result"></div>
+    </div>
+    <div id="profitLossOutput"></div>
+    <script src="calculator.js"> </script>
   </body>
 </html>
