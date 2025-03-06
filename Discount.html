@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discount Calculator</title>
+    <link rel="styleSheet" href="calculator.css" />
   </head>
   <body>
-    <h1>Discount Amount</h1>
-    <a href="home.html">Home</a>
+    <h1>DISCOUNT AMOUNT</h1>
+    <br /><a href="home.html">Home</a>
     <div class="inputField">
-    <label for="amount">Enter Your Marked Price</label>
-    <input type="text" id="marketPrice">
-    <label for="rate">Enter your Discount Rate %</label>
-    <input type="text" id="discountRate">
-    <button type="button" class="calculatorButton" onclick="calculateDiscount()">
-      Calculate Discount
-    </button>
+      <label for="amount">Enter Your Marked Price</label>
+      <input type="text" id="marketPrice">
+      <label for="rate">Enter Your Discount Rate %</label>
+      <input type="text" id="discountRate">
+      <button
+        type="button"
+        class="calculatorButton"
+        onclick="calculateDiscount()"
+      >
+        Calculate Discount
+      </button>
     </div>
     <div id="discountOutput"></div>
     <script src="calculator.js"></script>
