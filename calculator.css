@@ -30,7 +30,7 @@ a button:hover {
 a {
   text-align: start;
   font-size: 20px;
-  color: black;
+  color:blue;
 }
 .inputField {
   margin: 3rem;
