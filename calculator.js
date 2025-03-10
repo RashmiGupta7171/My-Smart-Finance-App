@@ -16,7 +16,7 @@ function calculateVat() {
     document.getElementById('vatOutput').innerHTML = "Total VAT Amount:" + vat;
     document.getElementById('vatOutput').innerHTML += "<br>Total Selling Price Including VAT:" + sellingPrice;
 }
-// Calculation for Discount AMount:
+// Calculation for Discount Amount:
 function calculateDiscount() {
     var markedPrice = document.getElementById('marketPrice').value;
     var discountRate = document.getElementById('discountRate').value;
