@@ -13,19 +13,19 @@ p {
   text-align: center;
   font-size: larger;
 }
-a button {
-  
+a button{
   border: 2px solid;
   font-size: 30px;
   text-align: center;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-top: auto;
+  display:flexbox;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  display:gridbox;
   cursor:pointer;
 }
 a button:hover {
   background-color: #b0b0b0;
-  transform: scale(1.1); 
 }
 a {
   text-align: start;
@@ -36,10 +36,8 @@ a {
   margin: 3rem;
   text-align: center;
   font-size: 20px;
-  border-width: 200px;
-  display: flex;
-  align-items: center;
-  gap:10px;
+  border-width: 100px;
+
 }
 .calculatorButton {
   font-size: 20px;
