@@ -1,6 +1,7 @@
 // calculation for VAT Amount:
 function calculateVat() {
     var markedPrice = document.getElementById('markedAmount').value;
+    
     var vatRate = document.getElementById('vatRate').value;
     if (!Number.isInteger(Number(markedPrice))) {
         document.getElementById('vatOutput').innerHTML = "Please Enter a Valid Number"
@@ -8,13 +9,15 @@ function calculateVat() {
     }
     if (markedPrice == 0) {
         document.getElementById('vatOutput').innerHTML = "No VAT Amount";
+        
         return;
     }
-    var vat = (vatRate / 100) * markedPrice;
-    var sellingPrice = parseInt(markedPrice) + vat;
-
-    document.getElementById('vatOutput').innerHTML = "Total VAT Amount:" + vat;
-    document.getElementById('vatOutput').innerHTML += "<br>Total Selling Price Including VAT:" + sellingPrice;
+     var vat = (vatRate / 100) * markedPrice;
+     var sellingPrice = parseInt(markedPrice) + vat;
+    
+     document.getElementById('vatOutput').innerHTML = "Total VAT Amount:" + vat;
+     document.getElementById('vatOutput').innerHTML += "<br>Total Selling Price Including VAT:" + sellingPrice;
+  
 }
 // Calculation for Discount Amount:
 function calculateDiscount() {
